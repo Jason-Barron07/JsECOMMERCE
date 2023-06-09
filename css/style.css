@@ -9,12 +9,22 @@
 }
 
 .nav-item:hover{
-    
     background-color: rgb(253, 62, 62);
     border-radius: 0.5em;
     border: 1.5px solid #080808;
     transition: ease-in 0.2s;
-    
+}
+
+.nav-item a h4{
+
+    color:rgb(253, 62, 62);
+
+}
+
+.nav-item a h4:hover{
+
+    color: #fff;
+
 }
 
 .nav-item{
@@ -25,5 +35,12 @@
 
 img{
     width: 100%;
+
+}
+
+span{
+
+    color:rgb(253, 62, 62);
+    font-weight: 900;
 
 }
