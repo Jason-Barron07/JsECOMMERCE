@@ -1,0 +1,25 @@
+*{
+
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Futura Extra Bold Condensed;
+    
+
+}
+
+.nav-item:hover{
+    
+    
+    background-color: rgb(253, 62, 62);
+    border-radius: 0.6em;
+    border: 2px solid #080808;
+    transition: ease-in 0.2s;
+    
+}
+
+.nav-item:hover{
+
+    color:#fff;
+
+}
