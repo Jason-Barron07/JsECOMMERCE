@@ -54,7 +54,7 @@ span{
 
 div #landing-picture{
 
-    box-shadow: 8px 4px 8px 2px rgb(253, 62, 62), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 8px 4px 8px 2px rgb(12, 12, 12), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
 
 
 }
@@ -64,7 +64,8 @@ div #landing-picture{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:300px;
+    margin-top:390px;
     margin-left:100px;
     font-weight: 900;
 } 
+

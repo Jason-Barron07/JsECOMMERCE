@@ -52,11 +52,11 @@ span{
 
 }
 
-.clearfix .About-text1 h2{
+.About-text1 h2{
 
     display: flex;
     justify-content: end;
     align-items: center;
     margin-top:300px;
-
 }
+
