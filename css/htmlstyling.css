@@ -4,9 +4,24 @@
     margin:0;
     box-sizing: border-box;
     font-family: Futura Extra Bold Condensed;
-    
+    outline: red dashed 2px;
 
 }
+body{
+
+    height:100vh;
+
+}
+
+img #landing-picture{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
 
 .navbar{
 
@@ -54,18 +69,23 @@ span{
 
 div #landing-picture{
 
-    box-shadow: 8px 4px 8px 2px rgb(12, 12, 12), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 8px 4px 8px 2px rgb(12, 12, 12), 0 6px 20px 4px rgba(197, 3, 3, 0.19);
+    padding:0.1rem;
 
+}
+
+
+
+img{
+
+    padding:10%;
 
 }
 
 .landing-text{
 
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    margin-top:390px;
-    margin-left:100px;
-    font-weight: 900;
-} 
 
+}

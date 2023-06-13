@@ -4,9 +4,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: Futura Extra Bold Condensed;
-
-    outline: red dashed 1px;
-    
+    outline: red dashed 2px;
 
 }
 
@@ -54,10 +52,32 @@ span{
 
 }
 
-.container{
-    padding:10%;
-    display:flex;
-    justify-items: center;
+.container tr{
+
+    border:  black 4px solid ;
+  
+}
+
+table{
+
+    margin-top:10%;
+    justify-content:center;
+    align-items: center;
+   
 
 }
 
+button {
+
+    background-color:#fff;
+    padding:5%;
+    border: 2px;
+}
+
+button:hover{
+
+    background-color:rgb(253, 62, 62);
+    color:#fff;
+    transition: ease-in-out 0.2s;
+
+}
