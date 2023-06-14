@@ -53,7 +53,7 @@ container.innerHTML += `
     <th>${data.price}</th>
     <th><img src="${data.image}" style="height:100px"/></th>
     <th><button id="add-btn">Add</button></th>
-    <th><button id="del-btn">Delete</button></th>
+    <th><button class="del-btn">Delete</button></th>
 </tr>
 
     
@@ -62,6 +62,48 @@ container.innerHTML += `
 
 
 
+let footer = document.querySelector('footer').innerHTML +=`
+
+   <footer>
+      
+      <div class="footer-c">Gmail: CompanySneaker123@gmail.com <br> Phone: 089 782 6532 <br> &copy;Copyright 2023
+      </div>
+      
+      </footer>
+
+`
 
 
+let remove = document.getElementsByClassName('del-btn')
 
+console.log(remove)
+
+for (let i = 0; i< remove.length; i++){
+
+    let button = remove[i]
+
+    button.addEventListener('click', function(event){
+
+      let buttonAccesed=event.target
+      buttonAccesed.parentElement.parentElement.remove()
+        updateTotal()
+
+    })
+
+}
+
+ /*
+ function updateTotal(){
+
+    let cartItems = document.getElementByClassName('cart-item')[]
+     let cart-rows =cartItems.getElementByClassName('cart-row')
+
+     for (let i = 0; i< cart-rows.length; i++){
+
+        let cart-row = cart-rows[i]
+        let price = 
+
+     }
+ }
+ 
+ */

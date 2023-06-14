@@ -30,6 +30,16 @@ let content = document.querySelector('body').innerHTML +=`
 </nav>
 
 
+<div class="display-items">
+
+    <div class="cart-items">
+    
+        
+    
+    </div>
+
+</div>
 
 
 `
+

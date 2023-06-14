@@ -101,7 +101,7 @@ content.forEach((data) =>{
 
     <div class="row gap-3" id="products">
     <div class="card" style="width: 18rem;">
-    <img src="${data.image}" class="card-img-top" alt="picture of product">
+    <img src="${data.image}" class="card-img-top" alt="picture of product" id="image">
     <div class="card-body">
       <h5 class="card-title">${data.name} <br> ${data.price}</h5>
       <p class="card-text"></p>
@@ -110,5 +110,8 @@ content.forEach((data) =>{
   </div>
 
 `
-})
+}
+)
+
+
 
