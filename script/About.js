@@ -77,7 +77,8 @@ let content = document.querySelector('body').innerHTML +=`
 
       <footer>
       
-      <div class="footer-c">Gmail: CompanySneaker123@gmail.com <br> Phone: 089 782 6532 <br> &copy;Copyright 2023</div>
+      <div class="footer-c">Gmail: CompanySneaker123@gmail.com <br> Phone: 089 782 6532 <br> &copy;Copyright 2023
+      </div>
       
       </footer>
 
