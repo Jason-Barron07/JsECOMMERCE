@@ -48,6 +48,48 @@
         </tr>
     </table>
 
+    <!-- Button trigger modal -->
+ <button type="button" class="btn btn-light" id="add" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add new products</button>
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="nameBook" class="form-control" id="name" placeholder="Enter the name of the product ">
+          </div>
+        
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price" placeholder="Enter the price product">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Picture</label>
+            <input type="picture" class="form-control" id="picture" placeholder="Picture of Product">
+          </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close">Close</button>
+      <button type="button" class="btn btn-primary" id="addbook"> Save changes</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
     
     <footer></footer>
 

@@ -50,20 +50,32 @@ span{
 
 }
 
-div #landing-picture{
+ div #landing-picture{
 
     box-shadow: 8px 4px 8px 2px rgb(12, 12, 12), 0 6px 20px 4px rgba(197, 3, 3, 0.19);
-    padding:0.1rem;
+   margin-left:25%;
+    margin-top: 30px;
+ 
+
+} 
+
+div .landing-text{
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
 
 }
 
-div #landing-picture{
+/* div #landing-picture{
 
     max-width: 400px;
     display: flex;
-    justify-content: end;
-    align-items: end;
-}
+    justify-content: start;
+    align-items: start;
+} */
+
 
 
 footer{
@@ -71,7 +83,9 @@ footer{
     padding:50px;
     margin-top:10px;
     background-color: Black;
-
+   
+    bottom:0;
+    width:100%;
 }
 
 footer .footer-c{
@@ -87,6 +101,9 @@ button{
 
     background-color:#080808 !important;
     color:#fff !important;
+    margin-left: 48% !important;
 } 
+
+
 
 
