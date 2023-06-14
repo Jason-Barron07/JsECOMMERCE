@@ -51,7 +51,7 @@ let content = (
 
         {
     
-            id:5,
+            id:6,
             name:'RS-TRCK RE:Escape Sneakers',
             price:'R2230',
             image:'https://i.postimg.cc/rp5W7Cdv/Screenshot-2023-06-14-135208.png',
