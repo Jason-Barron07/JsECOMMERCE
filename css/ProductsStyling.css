@@ -55,7 +55,6 @@ span{
 }
 
 .container{
-    padding:10%;
     display:flex;
     justify-items: center;
 
@@ -65,8 +64,11 @@ footer{
 
     padding:50px;
     background-color: Black;
-
+    bottom:0;
+    width:100%;
 }
+
+
 
 footer .footer-c{
 
@@ -78,7 +80,6 @@ color:#fff;
 }
 
 
-/* ksdjsk */
 
 
 
@@ -127,39 +128,6 @@ color:#fff;
 
 .btn-primary:hover {
     background-color: #2D9CDB;
-}
-
-.tour-row {
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
-
-.tour-row:last-child {
-    border: none;
-}
-
-.tour-item {
-    display: inline-block;
-    padding-right: .5em;
-}
-
-.tour-date {
-    color: #555;
-    width: 11%;
-    font-weight: bold;
-}
-
-.tour-city {
-    width: 24%;
-}
-
-.tour-arena {
-    width: 42%;
-}
-
-.tour-btn {
-    max-width: 19%;
 }
 
 .shop-item {
@@ -298,3 +266,4 @@ color:#fff;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+

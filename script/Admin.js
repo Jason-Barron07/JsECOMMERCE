@@ -38,6 +38,26 @@ let content = (
     
     
         },
+
+        {
+    
+            id:5,
+            name:'Jordan 1 low',
+            price:'R2299',
+            image:'https://i.postimg.cc/8CffMdB7/Screenshot-2023-06-14-134818.png',
+    
+    
+        },
+
+        {
+    
+            id:5,
+            name:'RS-TRCK RE:Escape Sneakers',
+            price:'R2230',
+            image:'https://i.postimg.cc/rp5W7Cdv/Screenshot-2023-06-14-135208.png',
+    
+    
+        },
     
     
     ]
@@ -52,7 +72,6 @@ container.innerHTML += `
     <th>${data.name}</th>
     <th>${data.price}</th>
     <th><img src="${data.image}" style="height:100px"/></th>
-    <th><button id="add-btn">Add</button></th>
     <th><button class="del-btn">Delete</button></th>
 </tr>
 
@@ -83,19 +102,3 @@ for (let i = 0; i< remove.length; i++){
 
 }
 
- /*
- function updateTotal(){
-
-    let cartItems = document.getElementByClassName('cart-item')[]
-     let cart-rows =cartItems.getElementByClassName('cart-row')
-
-     for (let i = 0; i< cart-rows.length; i++){
-
-        let cart-row = cart-rows[i]
-        let price = cart-row.getElementByClassNmae('cart-price)[0]
-        
-
-     }
- }
- 
- */

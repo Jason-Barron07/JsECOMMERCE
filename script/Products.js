@@ -1,5 +1,17 @@
 let bodycontent = document.querySelector('body').innerHTML+=`
 
+
+<footer>
+      
+<div class="footer-c">Gmail: CompanySneaker123@gmail.com <br> Phone: 089 782 6532 <br> &copy;Copyright 2023</div>
+
+</footer>
+
+`
+
+
+let carousel = document.querySelector('.carousel-1').innerHTML +=`
+
 <div id="carouselExampleCaptions" class="carousel slide">
 <div class="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -38,17 +50,7 @@ let bodycontent = document.querySelector('body').innerHTML+=`
   <span class="visually-hidden">Next</span>
 </button>
 </div>
-
-<footer>
-      
-<div class="footer-c">Gmail: CompanySneaker123@gmail.com <br> Phone: 089 782 6532 <br> &copy;Copyright 2023</div>
-
-</footer>
-
 `
-
-
-
 
 
 // Assisted by Ryan Barron
@@ -108,7 +110,9 @@ function addToCartClicked(event) {
   var button = event.target
   var shopItem = button.parentElement.parentElement
   var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+
   var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+
   var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
   addItemToCart(title, price, imageSrc)
   updateCartTotal()
@@ -156,3 +160,39 @@ function updateCartTotal() {
   total = Math.round(total * 100) / 100
   document.getElementsByClassName('cart-total-price')[0].innerText = 'R' + total
 }
+
+// addshoe.addEventListener('click', addProduct)
+// function addProduct(e){
+//     e.preventDefault();
+//     if(nameBook.value == '' && author.value == ''){
+//       alert('Inputs are empty')
+//     } else{
+//       products.push({
+//           id: 1,
+//           image:value,
+//           name: value,
+//           title: value,
+//           price: value,
+//       })
+//     }
+//     name.value = ''
+//     price.value = ''
+//     picture.value = ''
+//     adminInput.value = ''
+//     title.value = ''
+//     bookData()
+//     localStorage.setItem('products', JSON.stringify(products))
+// }
+
+
+
+let imageSrc = document.getElementsByClassName('shop-item-image')
+let price = document.getElementsByClassName('shop-item-price')
+let title = document.getElementsByClassName('shop-item-title')
+
+let arrayItems = {imageSrc,price,title}
+
+console.log(arrayItems)
+
+localStorage.setItem('productInfo',JSON.stringify('productInfo'))
+localStorage.getItem('productInfo')

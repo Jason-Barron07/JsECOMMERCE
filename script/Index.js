@@ -33,7 +33,7 @@ let content = document.querySelector('body').innerHTML +=`
 
     <div>
 
-<img src="https://i.postimg.cc/Df4pbbHt/Screenshot-2023-06-13-100253.png" class="img-fluid w-50 h-25 m-5 rounded" alt="logo" id="landing-picture">
+<img src="https://i.postimg.cc/tRLNYT3R/landing-page.jpg" class="img-fluid w-50 h-50 rounded" alt="logo" id="landing-picture">
 
 
            <div class="landing-text">
@@ -45,10 +45,8 @@ let content = document.querySelector('body').innerHTML +=`
 
     <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact Us</button>
 
-    <form
-action="https://formspree.io/f/xnqyrary"
-method="POST"
->
+  <form action="https://formspree.io/f/xnqyrary" method="POST">
+
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -77,7 +75,7 @@ method="POST"
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
         <button type="submit" class="btn btn-primary" >Send message</button>
       </div>
     </div>
