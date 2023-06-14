@@ -82,20 +82,5 @@ button:hover{
 
 }
 
-footer{
 
-    padding:20px;
-    padding-top: 1px;
-    margin-top:100px;
-    background-color: Black;
-
-}
-
-footer .footer-c{
-
-display:flex;
-justify-content: center;
-align-items: center;
-color:#fff;
-}
 

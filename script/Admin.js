@@ -62,16 +62,7 @@ container.innerHTML += `
 
 
 
-let footer = document.querySelector('footer').innerHTML +=`
 
-   <footer>
-      
-      <div class="footer-c">Gmail: CompanySneaker123@gmail.com <br> Phone: 089 782 6532 <br> &copy;Copyright 2023
-      </div>
-      
-      </footer>
-
-`
 
 
 let remove = document.getElementsByClassName('del-btn')
@@ -101,7 +92,8 @@ for (let i = 0; i< remove.length; i++){
      for (let i = 0; i< cart-rows.length; i++){
 
         let cart-row = cart-rows[i]
-        let price = 
+        let price = cart-row.getElementByClassNmae('cart-price)[0]
+        
 
      }
  }
