@@ -4,7 +4,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: Futura Extra Bold Condensed;
-    outline: red dashed 2px;
+
 
 }
 
@@ -81,3 +81,20 @@ button:hover{
     transition: ease-in-out 0.2s;
 
 }
+
+footer{
+
+    padding:50px;
+    margin-top:10px;
+    background-color: Black;
+
+}
+
+footer .footer-c{
+
+display:flex;
+justify-content: center;
+align-items: center;
+color:#fff;
+}
+

@@ -4,25 +4,8 @@
     margin:0;
     box-sizing: border-box;
     font-family: Futura Extra Bold Condensed;
-    outline: red dashed 2px;
 
 }
-body{
-
-    height:100vh;
-
-}
-
-img #landing-picture{
-
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
-
 .navbar{
 
     background-color:#080808 ;
@@ -74,18 +57,30 @@ div #landing-picture{
 
 }
 
+div #landing-picture{
+
+    max-width: 400px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
 
 
-img{
+footer{
 
-    padding:10%;
+    padding:50px;
+    margin-top:10px;
+    background-color: Black;
 
 }
 
-.landing-text{
+footer .footer-c{
 
-    display:flex;
-    justify-content: center;
-    align-items: center;
+display:flex;
+justify-content: center;
+align-items: center;
+color:#fff;
 
 }
+
+
