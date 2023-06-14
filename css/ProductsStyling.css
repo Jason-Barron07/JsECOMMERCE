@@ -4,8 +4,8 @@
     margin:0;
     box-sizing: border-box;
     font-family: Futura Extra Bold Condensed;
-
-    outline: red dashed 1px;
+/* 
+    outline: red dashed 1px; */
     
 
 }
@@ -61,3 +61,18 @@ span{
 
 }
 
+footer{
+
+    padding:50px;
+    background-color: Black;
+
+}
+
+footer .footer-c{
+
+display:flex;
+justify-content: center;
+align-items: center;
+color:#fff;
+
+}
