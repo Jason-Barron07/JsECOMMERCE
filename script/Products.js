@@ -165,13 +165,4 @@ function updateCartTotal() {
 
 
 
-let imageSrc = document.getElementsByClassName('shop-item-image')
-let price = document.getElementsByClassName('shop-item-price')
-let title = document.getElementsByClassName('shop-item-title')
 
-let arrayItems = {imageSrc,price,title}
-
-console.log(arrayItems)
-
-localStorage.setItem('productInfo',JSON.stringify('productInfo'))
-localStorage.getItem('productInfo')

@@ -1,15 +1,21 @@
 let container = document.querySelector('.container');
 let adminInput = document.querySelector('#rows')
-let addshoe = document.querySelector('#addshoe')
-let addData = (addshoe)
+let addshoe = document.querySelectorAll('#addshoe')
+// localStorage.setItem('CartItems',JSON.stringify(CartItems))
+// let CartItems = JSON.parse(localStorage.getItem('CartItems')) || []
+// updateCart()
+// let Products = JSON.parse(localStorage.getItem('CartItems'))
+
+
 let content = (
+
 
     [
     
         {
     
             id:1,
-            name:'Jordan 1 <br> University blue',
+            Prodname:'Jordan 1 <br> University blue',
             price:'R3400',
             image:'https://i.postimg.cc/t4t27zwk/Screenshot-2023-06-12-133626.png'
     
@@ -17,7 +23,7 @@ let content = (
         {
     
             id:2,
-            name:'Puma Regal Horizon',
+            Prodname:'Puma Regal Horizon',
             price:'R2100',
             image:'https://i.postimg.cc/wvPdPFjg/Screenshot-2023-06-12-133547.png'
         
@@ -25,7 +31,7 @@ let content = (
         {
     
             id:3,
-            name:'Nike Air Max Plus',
+            Prodname:'Nike Air Max Plus',
             price:'R2400',
             image:'https://i.postimg.cc/t4vvDwMv/Screenshot-2023-06-12-133702.png',
     
@@ -35,7 +41,7 @@ let content = (
         {
     
             id:4,
-            name:'Jordan 13',
+            Prodname:'Jordan 13',
             price:'R3500',
             image:'https://i.postimg.cc/ZnxYgZhz/Screenshot-2023-06-13-083034.png',
     
@@ -45,7 +51,7 @@ let content = (
         {
     
             id:5,
-            name:'Jordan 1 low',
+            Prodname:'Jordan 1 low',
             price:'R2299',
             image:'https://i.postimg.cc/8CffMdB7/Screenshot-2023-06-14-134818.png',
     
@@ -55,7 +61,7 @@ let content = (
         {
     
             id:6,
-            name:'RS-TRCK RE:Escape Sneakers',
+            Prodname:'RS-TRCK RE:Escape Sneakers',
             price:'R2230',
             image:'https://i.postimg.cc/rp5W7Cdv/Screenshot-2023-06-14-135208.png',
     
@@ -66,13 +72,15 @@ let content = (
     ]
 )
 
+
+
 content.forEach((data) =>{
 
 
 container.innerHTML += `
 
 <tr>
-    <th>${data.name}</th>
+    <th>${data.Prodname}</th>
     <th>${data.price}</th>
     <th><img src="${data.image}" style="height:100px"/></th>
     <th><button class="del-btn">Delete</button></th>
@@ -106,46 +114,43 @@ for (let i = 0; i< remove.length; i++){
 }
 
 
-//add product to Admin table
-
-
-
-
 addData.addEventListener('click', addProduct)
-function addProduct(e){
-    e.preventDefault();
-    if(content.value == ''){
-      alert('Inputs are empty')
-    } else{
-      content.push({
-          name:name.value,
-          price:price.value,
-          image:image.value,
-      })
-    
+function addProduct(){
+    container.innerHTML = ""
+    event.preventDefault();
+    if(Prodname.value == '', image.value == '',  price.value == ''){
+        alert('Please add in a new Product!')
+        adminProducts();
+    } else {
+        
+        content.push({
+                id:id.value,
+               name: Prodname.value,
+               image: image.value,
+               price: price.value
+        });
+        id++
+        Prodname.value = '', imgage.value = '', price.value = '';
+        adminProducts();
     }
 }
 
-addProduct()
 
+function adminProducts(){
 
+    content.forEach((data) =>{
 
-function addContent() {
-   content.innerHTML = "";
-    content.forEach((data) => {
-      adminInput.innerHTML += `
-        <tr>
-      <th>${data.name}</th>
-      <th>${data.price}</th>
-      <th><img src="${data.image}" style="height:100px"/></th>
-      <th><button class="del-btn">Delete</button></th>
-        </tr>
-`
-    });
+        container.innerHTML+=`
+        
+    <tr>
+    <th>${data.Prodname}</th>
+    <th>${data.price}</th>
+    <th><img src="${data.image}" style="height:100px"/></th>
+    <th><button class="del-btn">Delete</button></th>
+    </tr>       
+ `
 
+    })
+adminProducts()
 }
 
-addContent()
-
-
-console.log(data.name)
