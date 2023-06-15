@@ -11,76 +11,76 @@
 </head>
 <body>
    
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><h1 class="head-text"><span>SN3</span>AKER <span>Com</span>plex </h1></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"><h4>Home</h4></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="About.html"><h4>About</h4></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="Products.html"><h4>Products</h4></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="Admin.html"><h4>Admin</h4></a>
-              </li>
-             
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h1 class="head-text"><span>SN3</span>AKER <span>Com</span>plex </h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><h4>Home</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="About.html"><h4>About</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Products.html"><h4>Products</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Admin.html"><h4>Admin</h4></a>
+          </li>
+         
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
       <table class="container" >
         <tr id="rows">
-            <th>Name</th>
-            <th>Price</th>
-            <th>Product</th>
+            <th >Name</th>
+            <th >Price</th>
+            <th >Product</th>
             
         </tr>
     </table>
+ 
+  
 
-    <!-- Button trigger modal -->
- <button type="button" class="btn btn-light" id="add" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add new products</button>
- <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h1 class="modal-title fs-5" id="exampleModalLabel">Insert product information</h1>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Name</label>
-            <input type="name" class="form-control" id="name" placeholder="Enter the name of the product ">
+   
+        <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal"> Add new products</button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Insert product information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Price</label>
-            <input type="number" class="form-control" id="price" placeholder="Enter the price product">
+          <div class="modal-body">
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="name" placeholder="Enter the name of the product ">
+                </div>
+              
+              <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Price</label>
+                  <input type="number" class="form-control" id="price" placeholder="Enter the price product">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Picture</label>
+                  <input type="picture" class="form-control" id="image" placeholder="Picture of Product">
+                </div>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Picture</label>
-            <input type="picture" class="form-control" id="image" placeholder="Picture of Product">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="addshoe"> Submit</button>
           </div>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-primary" id="addshoe"> Submit</button>
-    </div>
-  </div>
-</div>
-</div>
-
-
+        </div>
+      </div>
+      </div> 
 
 
 
