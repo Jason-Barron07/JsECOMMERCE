@@ -1,4 +1,7 @@
 let container = document.querySelector('.container');
+let adminInput = document.querySelector('#rows')
+let addshoe = document.querySelector('#addshoe')
+let addData = (addshoe)
 let content = (
 
     [
@@ -102,3 +105,47 @@ for (let i = 0; i< remove.length; i++){
 
 }
 
+
+//add product to Admin table
+
+
+
+
+addData.addEventListener('click', addProduct)
+function addProduct(e){
+    e.preventDefault();
+    if(content.value == ''){
+      alert('Inputs are empty')
+    } else{
+      content.push({
+          name:name.value,
+          price:price.value,
+          image:image.value,
+      })
+    
+    }
+}
+
+addProduct()
+
+
+
+function addContent() {
+   content.innerHTML = "";
+    content.forEach((data) => {
+      adminInput.innerHTML += `
+        <tr>
+      <th>${data.name}</th>
+      <th>${data.price}</th>
+      <th><img src="${data.image}" style="height:100px"/></th>
+      <th><button class="del-btn">Delete</button></th>
+        </tr>
+`
+    });
+
+}
+
+addContent()
+
+
+console.log(data.name)
