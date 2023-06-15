@@ -10,6 +10,22 @@
 
 }
 
+@media screen and (max-width:700px) and (min-width:300px) {
+    
+    .shop-item{
+
+        display:table-column;
+
+
+    }
+
+    body{
+
+        background-color: #080808;
+
+    }
+}
+
 .navbar{
 
     background-image: linear-gradient(to right, #0e0d0d ,red ); 
@@ -267,3 +283,28 @@ color:#fff;
     font-size: 1.75em;
 }
 
+.section-header {
+
+    display: flex;
+    font-weight: 600;
+    text-align: center;
+    color: #EB5757;
+
+}
+
+.section-header-2 {
+
+    font-size: 90px;
+    font-weight: 600;
+    text-align: center;
+
+
+}
+
+.band-name{
+
+    font-size: 90px;
+    font-weight: 600;
+    text-align: center;
+
+}
